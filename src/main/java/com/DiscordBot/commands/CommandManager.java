@@ -23,8 +23,6 @@ public class CommandManager extends ListenerAdapter {
                 } else {
                     guild.upsertCommand(command.getName(), command.getDescription()).addOptions(command.getOptions()).queue();
                 }
-
-
             }
         }
     }

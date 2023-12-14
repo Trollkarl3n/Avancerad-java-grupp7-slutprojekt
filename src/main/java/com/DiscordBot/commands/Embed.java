@@ -35,7 +35,7 @@ public class Embed implements ICommand {
         builder.addField("Field 1", "Value", false);
         builder.addField("Field 2", "Value", false);
         builder.addField("Field 3", "Value", false);
-        builder.setFooter("Author: Neil & Eric");
+        builder.setFooter("Author: Neil & Erik");
         builder.setColor(Color.CYAN);
         event.replyEmbeds(builder.build()).queue();
 

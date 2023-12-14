@@ -15,7 +15,14 @@ public class Listeners extends ListenerAdapter {
     public void onReady(@NotNull ReadyEvent event){
         Guild guild = event.getJDA().getGuildById("1184427537133211698");
         guild.upsertCommand("sum", "Gives the sum of two numbers").addOptions(
-                new OptionData(OptionType.INTEGER, "number1", "The first number", true).setMinValue(1).setMaxValue(100)).queue();
+                new OptionData(OptionType.INTEGER, "number1", "The first number", true)
+                        .setMinValue(1)
+                        .setMaxValue(100),
+                new OptionData(OptionType.INTEGER, "number2", "The second number", false)
+                        .setMinValue(1)
+                        .setMaxValue(100)
+        ).queue();
+
     }
 
 /*

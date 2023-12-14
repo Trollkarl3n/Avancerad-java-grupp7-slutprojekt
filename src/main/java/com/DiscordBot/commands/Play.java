@@ -41,7 +41,7 @@ public class Play implements ICommand{
         Member self = event.getGuild().getSelfMember();
         GuildVoiceState selfVoiceState = self.getVoiceState();
 
-        if (selfVoiceState.inAudioChannel()){
+        if (!selfVoiceState.inAudioChannel()){
             event.getGuild().getAudioManager().openAudioConnection(memberVoiceState.getChannel());
         } else {
             if (selfVoiceState.getChannel() != memberVoiceState.getChannel()) {

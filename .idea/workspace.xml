@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e62379f-5d47-4a23-8183-4857b478a90b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/DiscordBot/commands/Play.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/DiscordBot/lavaplayer/AudioForwarder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/DiscordBot/lavaplayer/GuildMusicManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/DiscordBot/lavaplayer/PlayerManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/DiscordBot/lavaplayer/TrackScheduler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/DiscordBot/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DiscordBot/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DiscordBot/commands/Play.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DiscordBot/commands/Play.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

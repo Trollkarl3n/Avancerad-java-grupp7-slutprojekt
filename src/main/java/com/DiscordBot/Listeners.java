@@ -11,7 +11,7 @@ import org.jetbrains.annotations.NotNull;
 
 public class Listeners extends ListenerAdapter {
 
-    @Override
+    /*@Override
     public void onReady(@NotNull ReadyEvent event){
         Guild guild = event.getJDA().getGuildById("1184427537133211698");
         guild.upsertCommand("sum", "Gives the sum of two numbers").addOptions(
@@ -23,7 +23,7 @@ public class Listeners extends ListenerAdapter {
                         .setMaxValue(100)
         ).queue();
 
-    }
+    }*/
 
 /*
     @Override

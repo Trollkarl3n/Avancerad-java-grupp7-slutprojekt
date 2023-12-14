@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e62379f-5d47-4a23-8183-4857b478a90b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/DiscordBot/commands/CommandManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/DiscordBot/commands/ICommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/DiscordBot/Listeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DiscordBot/Listeners.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DiscordBot/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DiscordBot/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/DiscordBot/commands/Sum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DiscordBot/commands/Sum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +26,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>

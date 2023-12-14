@@ -1,6 +1,7 @@
 package com.DiscordBot;
 
 import com.DiscordBot.commands.CommandManager;
+import com.DiscordBot.commands.Embed;
 import com.DiscordBot.commands.Sum;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
@@ -12,6 +13,7 @@ public class Main {
         //jda.addEventListener(new Sum());
         CommandManager manager = new CommandManager();
         manager.add(new Sum());
+        manager.add(new Embed());
         jda.addEventListener(manager);
 
         /*

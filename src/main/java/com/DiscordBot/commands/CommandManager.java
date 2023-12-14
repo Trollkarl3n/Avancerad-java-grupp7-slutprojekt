@@ -16,8 +16,14 @@ public class CommandManager extends ListenerAdapter {
     @Override
     public void onReady(@NotNull ReadyEvent event) {
         for(Guild guild : event.getJDA().getGuilds()) {
+
             for(ICommand command : commands) {
-                guild.upsertCommand(command.getName(), command.getDescription()).addOptions(command.getOptions()).queue();
+                if(command.getOptions() == null) {
+                    guild.upsertCommand(command.getName(), command.getDescription()).queue();
+                } else {
+                    guild.upsertCommand(command.getName(), command.getDescription()).addOptions(command.getOptions()).queue();
+                }
+
 
             }
         }

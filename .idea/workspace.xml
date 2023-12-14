@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e62379f-5d47-4a23-8183-4857b478a90b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-12-14_15_34__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-12-14_15_34__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/DiscordBot/commands/Play.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/DiscordBot/lavaplayer/AudioForwarder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/DiscordBot/lavaplayer/GuildMusicManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/DiscordBot/lavaplayer/PlayerManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/DiscordBot/lavaplayer/TrackScheduler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/DiscordBot/commands/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DiscordBot/commands/CommandManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/DiscordBot/commands/Embed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DiscordBot/commands/Embed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DiscordBot/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DiscordBot/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -52,6 +56,7 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "project.structure.last.edited": "Libraries",

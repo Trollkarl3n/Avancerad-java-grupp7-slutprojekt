@@ -7,6 +7,7 @@ version = "1.0.0"
 
 repositories {
     mavenCentral()
+    maven(url = "https://m2.dv8tion.net/releases")
 }
 
 dependencies {

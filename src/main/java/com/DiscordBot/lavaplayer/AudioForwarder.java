@@ -1,9 +1,9 @@
 package com.DiscordBot.lavaplayer;
 
 import com.sedmelluq.discord.lavaplayer.player.AudioPlayer;
-import com.sedmelluq.discord.lavaplayer.track.AudioTrack;
 import com.sedmelluq.discord.lavaplayer.track.playback.MutableAudioFrame;
 import net.dv8tion.jda.api.audio.AudioSendHandler;
+import net.dv8tion.jda.api.entities.Guild;
 
 import java.nio.ByteBuffer;
 
@@ -14,7 +14,7 @@ public class AudioForwarder implements AudioSendHandler {
     private final MutableAudioFrame frame = new MutableAudioFrame();
 
     // Uses the frame to get all the data -> that writes it to the buffer
-    public AudioForwarder(AudioPlayer player) {
+    public AudioForwarder(AudioPlayer player, Guild guild) {
         this.player = player;
         frame.setBuffer(buffer);
     }

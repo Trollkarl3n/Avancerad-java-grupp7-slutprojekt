@@ -3,6 +3,7 @@ package com.DiscordBot.commands.Music;
 import com.DiscordBot.ICommand;
 import com.DiscordBot.lavaplayer.GuildMusicManager;
 import com.DiscordBot.lavaplayer.PlayerManager;
+import com.sedmelluq.discord.lavaplayer.track.AudioTrack;
 import com.sedmelluq.discord.lavaplayer.track.AudioTrackInfo;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.GuildVoiceState;
@@ -10,17 +11,18 @@ import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.interactions.commands.build.OptionData;
 
+import java.util.ArrayList;
 import java.util.List;
 
-public class NowPlaying implements ICommand {
+public class Queue implements ICommand {
     @Override
     public String getName() {
-        return "nowplaying";
+        return "queue";
     }
 
     @Override
     public String getDescription() {
-        return "Will display the current playing song";
+        return "Will display the current queue";
     }
 
     @Override
@@ -52,16 +54,16 @@ public class NowPlaying implements ICommand {
         }
 
         GuildMusicManager guildMusicManager = PlayerManager.get().getGuildMusicManager(event.getGuild());
-        if(guildMusicManager.getTrackScheduler().getPlayer().getPlayingTrack() == null) {
-            event.reply("I am not playing anything").queue();
-            return;
-        }
-        AudioTrackInfo info = guildMusicManager.getTrackScheduler().getPlayer().getPlayingTrack().getInfo();
+        List<AudioTrack> queue = new ArrayList<>(guildMusicManager.getTrackScheduler().getQueue());
         EmbedBuilder embedBuilder = new EmbedBuilder();
-        embedBuilder.setTitle("Currently Playing");
-        embedBuilder.setDescription("**Name:** `" + info.title + "`");
-        embedBuilder.appendDescription("\n**Author:** `" + info.author + "`");
-        embedBuilder.appendDescription("\n**URL:** `" + info.uri + "`");
+        embedBuilder.setTitle("Current Queue");
+        if(queue.isEmpty()) {
+            embedBuilder.setDescription("Queue is empty");
+        }
+        for(int i = 0; i < queue.size(); i++) {
+            AudioTrackInfo info = queue.get(i).getInfo();
+            embedBuilder.addField(i+1 + ":", info.title, false);
+        }
         event.replyEmbeds(embedBuilder.build()).queue();
     }
 }

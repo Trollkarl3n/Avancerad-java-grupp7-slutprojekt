@@ -10,8 +10,6 @@ import java.awt.*;
 import java.util.List;
 
 public class Embed implements ICommand {
-
-
     @Override
     public String getName() {
         return "embed";
@@ -19,7 +17,7 @@ public class Embed implements ICommand {
 
     @Override
     public String getDescription() {
-        return "Send embed";
+        return "Will send an embed";
     }
 
     @Override
@@ -30,15 +28,15 @@ public class Embed implements ICommand {
     @Override
     public void execute(SlashCommandInteractionEvent event) {
         EmbedBuilder builder = new EmbedBuilder();
-        builder.setTitle("Embed");
-
-        builder.setDescription("Example embed");
+        builder.setTitle("Example Embed");
+        builder.setDescription("An example embed");
         builder.addField("Field 1", "Value", false);
         builder.addField("Field 2", "Value", false);
         builder.addField("Field 3", "Value", false);
-        builder.setFooter("Author: Neil & Erik");
-        builder.setColor(Color.CYAN);
+        builder.setFooter("Example Footer");
+        builder.setColor(Color.BLUE);
+        builder.appendDescription(" This has been added");
+        builder.setAuthor("Relaxing Leg");
         event.replyEmbeds(builder.build()).queue();
-
     }
 }

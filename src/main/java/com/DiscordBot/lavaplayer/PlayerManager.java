@@ -24,19 +24,19 @@ public class PlayerManager {
     }
 
     public static PlayerManager get() {
-        if (INSTANCE == null){
+        if(INSTANCE == null) {
             INSTANCE = new PlayerManager();
         }
         return INSTANCE;
     }
 
-    public GuildMusicManager getGuildMusicManager(Guild guild){
+    public GuildMusicManager getGuildMusicManager(Guild guild) {
         return guildMusicManagers.computeIfAbsent(guild.getIdLong(), (guildId) -> {
-          GuildMusicManager musicManager = new GuildMusicManager(audioPlayerManager, guild);
+            GuildMusicManager musicManager = new GuildMusicManager(audioPlayerManager, guild);
 
-          guild.getAudioManager().setSendingHandler(musicManager.getAudioForwarder());
+            guild.getAudioManager().setSendingHandler(musicManager.getAudioForwarder());
 
-          return musicManager;
+            return musicManager;
         });
     }
 
@@ -50,7 +50,7 @@ public class PlayerManager {
 
             @Override
             public void playlistLoaded(AudioPlaylist playlist) {
-
+                guildMusicManager.getTrackScheduler().queue(playlist.getTracks().get(0));
             }
 
             @Override

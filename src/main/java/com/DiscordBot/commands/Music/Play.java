@@ -1,5 +1,6 @@
-package com.DiscordBot.commands;
+package com.DiscordBot.commands.Music;
 
+import com.DiscordBot.ICommand;
 import com.DiscordBot.lavaplayer.PlayerManager;
 import net.dv8tion.jda.api.entities.GuildVoiceState;
 import net.dv8tion.jda.api.entities.Member;
@@ -7,10 +8,12 @@ import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEve
 import net.dv8tion.jda.api.interactions.commands.OptionType;
 import net.dv8tion.jda.api.interactions.commands.build.OptionData;
 
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Play implements ICommand{
+public class Play implements ICommand {
     @Override
     public String getName() {
         return "play";
@@ -49,8 +52,16 @@ public class Play implements ICommand{
                 return;
             }
         }
+
+        String name = event.getOption("name").getAsString();
+        try {
+            new URI(name);
+        } catch (URISyntaxException e) {
+            name = "ytserch" + name;
+        }
+
         PlayerManager playerManager = PlayerManager.get();
         event.reply("Playing").queue();
-        playerManager.play(event.getGuild(), event.getOption("name").getAsString());
+        playerManager.play(event.getGuild(), name);
     }
 }

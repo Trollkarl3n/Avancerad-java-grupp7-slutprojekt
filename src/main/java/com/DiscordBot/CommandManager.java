@@ -1,4 +1,4 @@
-package com.DiscordBot.commands;
+package com.DiscordBot;
 
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
@@ -16,7 +16,6 @@ public class CommandManager extends ListenerAdapter {
     @Override
     public void onReady(@NotNull ReadyEvent event) {
         for(Guild guild : event.getJDA().getGuilds()) {
-
             for(ICommand command : commands) {
                 if(command.getOptions() == null) {
                     guild.upsertCommand(command.getName(), command.getDescription()).queue();
@@ -28,7 +27,7 @@ public class CommandManager extends ListenerAdapter {
     }
 
     @Override
-    public void onSlashCommandInteraction(SlashCommandInteractionEvent event) {
+    public void onSlashCommandInteraction(@NotNull SlashCommandInteractionEvent event) {
         for(ICommand command : commands){
             if(command.getName().equals(event.getName())){
                 command.execute(event);

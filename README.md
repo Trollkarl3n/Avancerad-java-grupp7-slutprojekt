@@ -1,2 +1,2 @@
-#DiscordBot
-##Made by Neil & Erik
+# DiscordBot
+## Made by Neil & Erik

@@ -11,7 +11,7 @@ public class Main {
 
     public static void main(String[] args) throws LoginException {
         // Skapa en instans av JDABuilder och konfigurera den med botens token
-        JDA jda = JDABuilder.createDefault("MTE4NDQyMDY2MjQ3NjAzNDA0OA.GQAPVl.uvILNGUzO8QphbBED2z_tKuppWe1hd3D2zjIfk").build();
+        JDA jda = JDABuilder.createDefault("").build();
         // Lägg till en instans av Listeners-klassen som en event listener
         jda.addEventListener(new Listeners());
         // Skapa en instans av CommandManager

@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e62379f-5d47-4a23-8183-4857b478a90b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-12-14_15_34_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-12-14_15_34__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DiscordBot/commands/Music/NowPlaying.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DiscordBot/commands/Music/NowPlaying.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DiscordBot/commands/Music/Play.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DiscordBot/commands/Music/Play.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DiscordBot/commands/Music/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DiscordBot/commands/Music/Queue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DiscordBot/commands/Music/Repeat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DiscordBot/commands/Music/Repeat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DiscordBot/commands/Music/Skip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DiscordBot/commands/Music/Skip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/DiscordBot/commands/Music/Stop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/DiscordBot/commands/Music/Stop.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
